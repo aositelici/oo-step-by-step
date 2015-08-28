@@ -4,7 +4,7 @@ var Person = require('./person');
 
 function Student(name, age, klass) {
   Person.call(this, name, age);
-  this.class = klass;
+  this.class = (klass) ? klass.number : undefined;
 }
 
 Student.prototype = Object.create(Person.prototype);
