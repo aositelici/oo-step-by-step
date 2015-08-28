@@ -19,8 +19,8 @@ describe('worker:', function () {
 
   });
 
-  it('should return introduce I am a Worker. I have a job.', function () {
+  it('should return introduce My name is Tom. I am 21 years old.I am a Worker. I have a job.', function () {
 
-    expect(Tom.introduce()).toBe('I am a Worker. I have a job.');
+    expect(Tom.introduce()).toBe('My name is Tom. I am 21 years old.I am a Worker. I have a job.');
   });
 });

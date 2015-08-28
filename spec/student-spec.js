@@ -17,7 +17,7 @@ describe('test Student:', function() {
     expect(Tom instanceof Person).toBe(true);
   });
 
-  it ('should return introduce I am a Student. I am at Class 2.',function() {
-    expect(Tom.introduce()).toBe('I am a Student. I am at Class 2.');
+  it ('should return introduce My name is Tom. I am 21 years old.I am a Student. I am at Class 2.',function() {
+    expect(Tom.introduce()).toBe('My name is Tom. I am 21 years old.I am a Student. I am at Class 2.');
   });
 });
