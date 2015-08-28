@@ -3,6 +3,7 @@
 var Teacher = require('../src/teacher');
 var Student = require('../src/student');
 var Class = require('../src/class');
+var Person = require('../src/person');
 
 describe('teacher:', function () {
 
@@ -14,6 +15,13 @@ describe('teacher:', function () {
     expect(teacher.age).toBe(21);
     expect(teacher.class).toBe(2);
 
+  });
+
+  it('should be a instance of Person', function () {
+
+    var klass = new Class(2);
+    var teacher = new Teacher('Tom',21,klass);
+    expect(teacher instanceof Person).toBe(true);
   });
 
   it('should return introduce My name is Tom. I am 21 years old. I am a Teacher. I teach Class 2.', function () {
