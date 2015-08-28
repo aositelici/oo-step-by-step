@@ -5,7 +5,7 @@ function Person(name, age) {
   this.age = age;
 }
 
-Person.prototype.introduce = function() {
-  return 'My name is ' + this.name +'. I am '+ this.age + ' years old.';
+Person.prototype.introduce = function () {
+  return 'My name is ' + this.name + '. I am ' + this.age + ' years old.';
 };
 module.exports = Person;
